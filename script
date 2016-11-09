@@ -1,0 +1,47 @@
+$(document).ready(function() {
+   
+   pageBounce();
+   contactForm();
+});
+var contact = {
+   "Name": "",
+   "Phone": "",
+   "Email": "",
+   "Message": ""
+};
+
+function contactForm() {
+   $("#submit").on("click", function() {
+      contact.Name = $("#Name").val();
+      $("#Name").val("");
+      contact.Phone = $("#Phone").val();
+      $("#Phone").val("");
+      contact.Email = $("#Email").val();
+      $("#Email").val("");
+      contact.Message = $("#Message").val();
+      $("#Message").val("");
+      $("#contact-form-div").html("<h2 class='text-center'>Thank you for requesting info I will be in touch soon!</h2>");
+      //console.log(contact);
+   });
+}
+
+function pageBounce() {
+   $("#git").mouseenter(function() {
+      $("#git").addClass("animated bounce");
+   });
+   $("#git").mouseleave(function() {
+      $("#git").removeClass("animated bounce");
+   });
+   $("#codepen").mouseenter(function() {
+      $("#codepen").addClass("animated bounce");
+   });
+   $("#codepen").mouseleave(function() {
+      $("#codepen").removeClass("animated bounce");
+   });
+   $("#logo").mouseenter(function() {
+      $("#logo").addClass("animated bounce");
+   });
+   $("#logo").mouseleave(function() {
+      $("#logo").removeClass("animated bounce");
+   });
+}
