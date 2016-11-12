@@ -1,7 +1,139 @@
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-<style>
-<div class="container-fluid">
+
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - Personal Portfolio2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
+      <style>
+      body {
+   background-color: #151517;
+ }
+
+.active1 {
+   background-color: #3F3F3F !important;
+}
+
+.navbar-custom {
+   background-image: url(https://res.cloudinary.com/kevin-borah/image/upload/v1475778960/Black_and_Green_Shards_kvd7qc.jpg);
+   border-color:#24A900;
+}
+
+.navbar-brand {
+   padding: 1px 0px 0px 15px;
+}
+
+.kevin-borah-logo {
+   width: 50px;
+}
+
+.navbar-buttons {
+   color: #24A900 !important;
+   padding: -10px 0 0 0;
+}
+
+.about-me-section {
+   background-image: url(https://res.cloudinary.com/kevin-borah/image/upload/v1475778960/Black_and_Blue_Shards_fccaxs.jpg);
+   color: #8D8B90 !important;
+   padding: 90px 0px 60px 0px;
+}
+
+h1 {
+   padding-bottom: 40px;
+}
+
+.headshot {
+   border-radius: 50%;
+}
+
+.my-portfolio-section {
+   background-image: url(https://res.cloudinary.com/kevin-borah/image/upload/v1475778960/Black_and_Purple_Shards_rrvbfd.jpg);
+   color: #8D8B90;
+   padding: 90px 0px 60px 0px;   
+}
+
+.portfolio-images {
+   background-color: #151517;
+   border-color: #9600EC;
+   padding: 0px 0px 5px 0px;
+   color: #9600EC !important;
+}
+
+.contact-me-section {
+   background-image: url(https://res.cloudinary.com/kevin-borah/image/upload/v1475778959/Black_and_Red_Shards_entrvr.jpg);
+   color: #8D8B90;
+   padding: 90px 0px 60px 0px;
+}
+
+.contact-form-custom {
+   border-color: #F2032A;
+   color: #F2032A;
+}
+
+.contact-btn {
+   background-image: url(https://res.cloudinary.com/kevin-borah/image/upload/v1475778959/Black_and_Red_Shards_entrvr.jpg);
+   border-color: #F2032A;
+   color: #F2032A;
+}
+
+.footer {
+   background-image: url(https://res.cloudinary.com/kevin-borah/image/upload/v1475778960/Black_and_Green_Shards_kvd7qc.jpg);
+   border-color:#24A900;
+   color:#24A900;
+}
+
+.footer-well {
+   background-color: #24A900;
+   border-color: #000000;
+   color: #272725;
+}
+
+.my-pages {
+   list-style-type: none;
+   padding: none;
+   margin: none;
+   color: #171717 !important;
+   text-shadow: none !important;
+}
+
+#my-pages li {
+   display: inline;
+}
+
+.logo {
+   width: 25px;
+   display: inline;
+   margin: -12px 5px 0 0;
+   padding: none;
+}
+    </style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+</head>
+
+<body translate="no" >
+
+  <div class="container-fluid">
    <div class="row" id="nav">
       <div class="col-md-12">
          <nav class="navbar navbar-default navbar-fixed-top navbar-custom" id="navbar">
@@ -10,6 +142,7 @@
                   <a class="navbar-brand" href="#" target="blank" id="kevin-borah-logo-link">
                      <img alt="Brand" class="kevin-borah-logo img img-responsive" src="https://res.cloudinary.com/kevin-borah/image/upload/v1475718309/kevin-borah-logo-less-margin_myujut.png" id="kevin-borah-logo">
                   </a>
+
                </div>
                <ul class="nav navbar-nav navbar-right" id="navbar-buttons">
                   <li class="" id="navbar-buttons-about-me"><a class="navbar-buttons" href="#about-me-section">About Me <i class="fa fa-fw fa-info-circle"></i></a></li>
@@ -39,14 +172,18 @@
             <h6 class="text-center"><i class="fa fa-code"></i>Coded for the Build a Tribute Page challenge on <a style="color: #9600EC; text-decoration:underline" href="https://www.freecodecamp.com" target="blank">freecodecamp.com</a>.<i class="fa fa-code"></i></h6>
          </div>
          <div class="col-md-offset-2 col-md-4 well portfolio-images" id="random-quote-machine">
-            <a href="https://codepen.io/KevinBorah/full/amjGZj/" target="blank"><img alt="A Random Quote Machine" class="img img-responsive" src="https://res.cloudinary.com/kevin-borah/image/upload/v1478117381/amjGZj_upwdq5.jpg"></a>
+            <a href="https://codepen.io/KevinBorah/full/amjGZj/" target="blank"><img alt="A Random Quote Machine" class="img img-responsive" src="http://res.cloudinary.com/kevin-borah/image/upload/v1478922159/amjGZj_bu81sm.jpg"></a>
             <h6 class="text-center"><i class="fa fa-code"></i>Coded for the Build a Random Quote Machine challenge on <a style="color: #9600EC; text-decoration:underline" href="https://www.freecodecamp.com" target="blank">freecodecamp.com</a>.<i class="fa fa-code"></i></h6>
          </div>
       </div>
       <div class="row">
          <div class="col-md-offset-1 col-md-4 well portfolio-images" id="show-the-local-weather">
-            <a href="https://codepen.io/KevinBorah/full/vyEdNR/" target="blank"><img alt="Show the Local Weather" class="img img-responsive" src="https://res.cloudinary.com/kevin-borah/image/upload/v1478633337/vyEdNR_iimrzq.jpg"></a>
+            <a href="https://codepen.io/KevinBorah/full/vyEdNR/" target="blank"><img alt="Show the Local Weather" class="img img-responsive" src="http://res.cloudinary.com/kevin-borah/image/upload/v1478926030/vyEdNR_m7pama.jpg"></a>
             <h6 class="text-center"><i class="fa fa-code"></i>Coded for the Show the Local Weather challenge on <a style="color: #9600EC; text-decoration:underline" href="https://www.freecodecamp.com" target="blank">freecodecamp.com</a>.<i class="fa fa-code"></i></h6>
+         </div>
+         <div class="col-md-offset-2 col-md-4 well portfolio-images" id="wikipedia-viewer">
+            <a href="https://codepen.io/KevinBorah/full/pNgXRo/" target="blank"><img alt="A Wikipedia Viewer" class="img img-responsive" src="http://res.cloudinary.com/kevin-borah/image/upload/v1478923107/pNgXRo_r79pro.jpg"></a>
+            <h6 class="text-center"><i class="fa fa-code"></i>Coded for the Build a Wikipedia Viewer challenge on <a style="color: #9600EC; text-decoration:underline" href="https://www.freecodecamp.com" target="blank">freecodecamp.com</a>.<i class="fa fa-code"></i></h6>
          </div>
       </div>
    </div>
@@ -74,7 +211,7 @@
                   <label for="message" style="color: #F2032A;">Enter Message:</label>
                   <textarea class="form-control contact-form-custom" rows="4" placeholder="Enter Message" id="Message"></textarea>
                </div>
-               <button type="button" class="btn btn-default contact-btn" id="submit"><i class="fa fa-fw fa-paper-plane"></i> Submit</button>
+               <button type="submit" class="btn btn-default contact-btn" id="submit"><i class="fa fa-fw fa-paper-plane"></i> Submit</button>
             </form>
          </div>
       </div>
@@ -89,11 +226,73 @@
          </div>
          <div class="col-md-3 well footer-well">
             <ul class="text-center my-pages" id="my-pages">
-               <li><a class="my-pages" href="https://codepen.io/KevinBorah/full/yavGbE/" target="blank"><img id="logo" alt="Kevin Borah's logo" class="logo my-pages img img-responsive" src="https://res.cloudinary.com/kevin-borah/image/upload/v1475718309/kevin-borah-logo-less-margin_myujut.png"></a></li>
+               <li>
+                  <a class="my-pages" href="https://codepen.io/KevinBorah/full/yavGbE/" target="blank"><img id="logo" alt="Kevin Borah's logo" class="logo my-pages img img-responsive" src="https://res.cloudinary.com/kevin-borah/image/upload/v1475718309/kevin-borah-logo-less-margin_myujut.png"></a>
+               </li>
                <li><a class="my-pages" href="https://codepen.io/KevinBorah/" target="blank"><i id="codepen" class="fa fa-fw fa-codepen fa-2x"></i></a></li>
-               <li ><a class="my-pages" href="https://github.com/KevinBorah" target="blank"><i id="git" class="fa fa-fw fa-github fa-2x"></i></a></li>
+               <li><a class="my-pages" href="https://github.com/KevinBorah" target="blank"><i id="git" class="fa fa-fw fa-github fa-2x"></i></a></li>
             </ul>
          </div>
       </div>
    </div>
 </div>
+    <script src="//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-58d22c749295bca52f487966e382a94a495ac103faca9206cbd160bdf8aedf2a.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <script>
+    $(document).ready(function () {
+    pageBounce();
+    contactForm();
+});
+var contact = {
+    'Name': '',
+    'Phone': '',
+    'Email': '',
+    'Message': ''
+};
+function contactForm() {
+    $('#submit').on('click', function () {
+        if ($('#Name').val() !== '' && $('#Email').val() !== '') {
+            contact.Name = $('#Name').val();
+            $('#Name').val('');
+            contact.Phone = $('#Phone').val();
+            $('#Phone').val('');
+            contact.Email = $('#Email').val();
+            $('#Email').val('');
+            contact.Message = $('#Message').val();
+            $('#Message').val('');
+            $('#contact-form-div').html('<h2 class=\'text-center\'>This form is currently inactive to contact me please email me at kevinborah1994@gmail.com</h2>');
+        }
+    });
+}
+function pageBounce() {
+    $('#git').mouseenter(function () {
+        $('#git').addClass('animated bounce');
+    });
+    $('#git').mouseleave(function () {
+        $('#git').removeClass('animated bounce');
+    });
+    $('#codepen').mouseenter(function () {
+        $('#codepen').addClass('animated bounce');
+    });
+    $('#codepen').mouseleave(function () {
+        $('#codepen').removeClass('animated bounce');
+    });
+    $('#logo').mouseenter(function () {
+        $('#logo').addClass('animated bounce');
+    });
+    $('#logo').mouseleave(function () {
+        $('#logo').removeClass('animated bounce');
+    });
+}
+  //# sourceURL=pen.js
+  </script>
+
+  
+  
+
+</body>
+</html>
+ 
